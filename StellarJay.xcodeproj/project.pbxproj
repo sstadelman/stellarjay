@@ -10,6 +10,22 @@
 		1BE0EF832125391300C063B8 /* StellarJay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE0EF792125391300C063B8 /* StellarJay.framework */; };
 		1BE0EF882125391300C063B8 /* StellarJayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0EF872125391300C063B8 /* StellarJayTests.swift */; };
 		1BE0EF8A2125391300C063B8 /* StellarJay.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE0EF7C2125391300C063B8 /* StellarJay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BE0EF982125398D00C063B8 /* bear_transit.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1BE0EF962125398C00C063B8 /* bear_transit.geojson */; };
+		1BE0EF992125398D00C063B8 /* bear_transit_stops.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1BE0EF972125398C00C063B8 /* bear_transit_stops.geojson */; };
+		1BE0EF9C212539E400C063B8 /* GeoJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0EF9B212539E400C063B8 /* GeoJSON.swift */; };
+		1BE0EF9E212539EE00C063B8 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0EF9D212539EE00C063B8 /* Geometry.swift */; };
+		1BE0EFA0212539F500C063B8 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0EF9F212539F500C063B8 /* Point.swift */; };
+		1BE0EFA221253A0200C063B8 /* MultiPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0EFA121253A0200C063B8 /* MultiPoint.swift */; };
+		1BE0EFA421253A0900C063B8 /* LineString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0EFA321253A0900C063B8 /* LineString.swift */; };
+		1BE0EFA621253A4500C063B8 /* MultiLineString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0EFA521253A4500C063B8 /* MultiLineString.swift */; };
+		1BE0EFA821253A4F00C063B8 /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0EFA721253A4F00C063B8 /* Polygon.swift */; };
+		1BE0EFAA21253A6300C063B8 /* MultiPolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0EFA921253A6300C063B8 /* MultiPolygon.swift */; };
+		1BE0EFAC21253A7600C063B8 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0EFAB21253A7600C063B8 /* Feature.swift */; };
+		1BE0EFAE21253A7C00C063B8 /* FeatureCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0EFAD21253A7C00C063B8 /* FeatureCollection.swift */; };
+		1BE0EFB021253B6100C063B8 /* PositionContaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0EFAF21253B6100C063B8 /* PositionContaining.swift */; };
+		1BE0EFB221253C0800C063B8 /* BearTransitRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0EFB121253C0800C063B8 /* BearTransitRouteTests.swift */; };
+		1BE0EFB421253C1F00C063B8 /* BearTransitStopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0EFB321253C1F00C063B8 /* BearTransitStopTests.swift */; };
+		1BE0EFB621253F2D00C063B8 /* BearTransit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0EFB521253F2D00C063B8 /* BearTransit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +45,22 @@
 		1BE0EF822125391300C063B8 /* StellarJayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StellarJayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE0EF872125391300C063B8 /* StellarJayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StellarJayTests.swift; sourceTree = "<group>"; };
 		1BE0EF892125391300C063B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BE0EF962125398C00C063B8 /* bear_transit.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bear_transit.geojson; sourceTree = "<group>"; };
+		1BE0EF972125398C00C063B8 /* bear_transit_stops.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bear_transit_stops.geojson; sourceTree = "<group>"; };
+		1BE0EF9B212539E400C063B8 /* GeoJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoJSON.swift; sourceTree = "<group>"; };
+		1BE0EF9D212539EE00C063B8 /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		1BE0EF9F212539F500C063B8 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		1BE0EFA121253A0200C063B8 /* MultiPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPoint.swift; sourceTree = "<group>"; };
+		1BE0EFA321253A0900C063B8 /* LineString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineString.swift; sourceTree = "<group>"; };
+		1BE0EFA521253A4500C063B8 /* MultiLineString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLineString.swift; sourceTree = "<group>"; };
+		1BE0EFA721253A4F00C063B8 /* Polygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
+		1BE0EFA921253A6300C063B8 /* MultiPolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPolygon.swift; sourceTree = "<group>"; };
+		1BE0EFAB21253A7600C063B8 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		1BE0EFAD21253A7C00C063B8 /* FeatureCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCollection.swift; sourceTree = "<group>"; };
+		1BE0EFAF21253B6100C063B8 /* PositionContaining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionContaining.swift; sourceTree = "<group>"; };
+		1BE0EFB121253C0800C063B8 /* BearTransitRouteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearTransitRouteTests.swift; sourceTree = "<group>"; };
+		1BE0EFB321253C1F00C063B8 /* BearTransitStopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearTransitStopTests.swift; sourceTree = "<group>"; };
+		1BE0EFB521253F2D00C063B8 /* BearTransit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearTransit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +105,17 @@
 			children = (
 				1BE0EF7C2125391300C063B8 /* StellarJay.h */,
 				1BE0EF7D2125391300C063B8 /* Info.plist */,
+				1BE0EF9B212539E400C063B8 /* GeoJSON.swift */,
+				1BE0EF9D212539EE00C063B8 /* Geometry.swift */,
+				1BE0EF9F212539F500C063B8 /* Point.swift */,
+				1BE0EFA121253A0200C063B8 /* MultiPoint.swift */,
+				1BE0EFA321253A0900C063B8 /* LineString.swift */,
+				1BE0EFA521253A4500C063B8 /* MultiLineString.swift */,
+				1BE0EFA721253A4F00C063B8 /* Polygon.swift */,
+				1BE0EFA921253A6300C063B8 /* MultiPolygon.swift */,
+				1BE0EFAB21253A7600C063B8 /* Feature.swift */,
+				1BE0EFAD21253A7C00C063B8 /* FeatureCollection.swift */,
+				1BE0EFAF21253B6100C063B8 /* PositionContaining.swift */,
 			);
 			path = StellarJay;
 			sourceTree = "<group>";
@@ -80,10 +123,23 @@
 		1BE0EF862125391300C063B8 /* StellarJayTests */ = {
 			isa = PBXGroup;
 			children = (
+				1BE0EF9A2125399700C063B8 /* Sample Data */,
 				1BE0EF872125391300C063B8 /* StellarJayTests.swift */,
+				1BE0EFB121253C0800C063B8 /* BearTransitRouteTests.swift */,
+				1BE0EFB321253C1F00C063B8 /* BearTransitStopTests.swift */,
 				1BE0EF892125391300C063B8 /* Info.plist */,
+				1BE0EFB521253F2D00C063B8 /* BearTransit.swift */,
 			);
 			path = StellarJayTests;
+			sourceTree = "<group>";
+		};
+		1BE0EF9A2125399700C063B8 /* Sample Data */ = {
+			isa = PBXGroup;
+			children = (
+				1BE0EF962125398C00C063B8 /* bear_transit.geojson */,
+				1BE0EF972125398C00C063B8 /* bear_transit_stops.geojson */,
+			);
+			name = "Sample Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +204,7 @@
 				TargetAttributes = {
 					1BE0EF782125391300C063B8 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					1BE0EF812125391300C063B8 = {
 						CreatedOnToolsVersion = 10.0;
@@ -184,6 +241,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BE0EF982125398D00C063B8 /* bear_transit.geojson in Resources */,
+				1BE0EF992125398D00C063B8 /* bear_transit_stops.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +253,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BE0EFAA21253A6300C063B8 /* MultiPolygon.swift in Sources */,
+				1BE0EFB021253B6100C063B8 /* PositionContaining.swift in Sources */,
+				1BE0EFA621253A4500C063B8 /* MultiLineString.swift in Sources */,
+				1BE0EFA221253A0200C063B8 /* MultiPoint.swift in Sources */,
+				1BE0EF9C212539E400C063B8 /* GeoJSON.swift in Sources */,
+				1BE0EF9E212539EE00C063B8 /* Geometry.swift in Sources */,
+				1BE0EFA0212539F500C063B8 /* Point.swift in Sources */,
+				1BE0EFAE21253A7C00C063B8 /* FeatureCollection.swift in Sources */,
+				1BE0EFAC21253A7600C063B8 /* Feature.swift in Sources */,
+				1BE0EFA421253A0900C063B8 /* LineString.swift in Sources */,
+				1BE0EFA821253A4F00C063B8 /* Polygon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BE0EF882125391300C063B8 /* StellarJayTests.swift in Sources */,
+				1BE0EFB221253C0800C063B8 /* BearTransitRouteTests.swift in Sources */,
+				1BE0EFB421253C1F00C063B8 /* BearTransitStopTests.swift in Sources */,
+				1BE0EFB621253F2D00C063B8 /* BearTransit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +414,7 @@
 		1BE0EF8E2125391300C063B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -350,6 +424,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = StellarJay/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +433,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sstadelman.StellarJay;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +442,7 @@
 		1BE0EF8F2125391300C063B8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -375,6 +452,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = StellarJay/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,6 +469,7 @@
 		1BE0EF912125391300C063B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6F9SQVL3N2;
 				INFOPLIST_FILE = StellarJayTests/Info.plist;
@@ -409,6 +488,7 @@
 		1BE0EF922125391300C063B8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6F9SQVL3N2;
 				INFOPLIST_FILE = StellarJayTests/Info.plist;

@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+open class GeoJSON: Decodable {
+    enum GeoJSONKeys: String, CodingKey {
+        case type
+        //        case boundingBox = "bbox"
+    }
+    
+    public required init(from decoder: Decoder) throws  {
+        let values = try decoder.container(keyedBy: GeoJSONKeys.self)
+        self.type = try values.decode(String.self, forKey: .type)
+    }
+    public let type: String
+}

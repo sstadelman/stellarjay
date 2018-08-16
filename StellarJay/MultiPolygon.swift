@@ -7,3 +7,6 @@
 //
 
 import Foundation
+
+public final class MultiPolygon: Polygon {
+}

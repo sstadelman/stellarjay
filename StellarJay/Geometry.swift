@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+public class Geometry: GeoJSON {
+    
+    enum CodingKeys: String, CodingKey {
+        case coordinates
+    }
+    
+    public required init(from decoder: Decoder) throws  {
+        try super.init(from: decoder)
+    }
+}

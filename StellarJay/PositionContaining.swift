@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol PositionContaining {
+    associatedtype Coordinates
+    var coordinates: Coordinates { get }
+}
