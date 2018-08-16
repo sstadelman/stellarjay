@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B319DA421254B8D00756F95 /* StandardGeoJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B319DA321254B8D00756F95 /* StandardGeoJSONTests.swift */; };
+		1B9A08B821254846006D5D3A /* Keyed+UnkeyedCodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A08B721254846006D5D3A /* Keyed+UnkeyedCodingContainer.swift */; };
 		1BE0EF832125391300C063B8 /* StellarJay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE0EF792125391300C063B8 /* StellarJay.framework */; };
 		1BE0EF882125391300C063B8 /* StellarJayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0EF872125391300C063B8 /* StellarJayTests.swift */; };
 		1BE0EF8A2125391300C063B8 /* StellarJay.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE0EF7C2125391300C063B8 /* StellarJay.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B319DA321254B8D00756F95 /* StandardGeoJSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardGeoJSONTests.swift; sourceTree = "<group>"; };
+		1B9A08B721254846006D5D3A /* Keyed+UnkeyedCodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keyed+UnkeyedCodingContainer.swift"; sourceTree = "<group>"; };
 		1BE0EF792125391300C063B8 /* StellarJay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StellarJay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE0EF7C2125391300C063B8 /* StellarJay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StellarJay.h; sourceTree = "<group>"; };
 		1BE0EF7D2125391300C063B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 				1BE0EFAB21253A7600C063B8 /* Feature.swift */,
 				1BE0EFAD21253A7C00C063B8 /* FeatureCollection.swift */,
 				1BE0EFAF21253B6100C063B8 /* PositionContaining.swift */,
+				1B9A08B721254846006D5D3A /* Keyed+UnkeyedCodingContainer.swift */,
 			);
 			path = StellarJay;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 				1BE0EFB321253C1F00C063B8 /* BearTransitStopTests.swift */,
 				1BE0EF892125391300C063B8 /* Info.plist */,
 				1BE0EFB521253F2D00C063B8 /* BearTransit.swift */,
+				1B319DA321254B8D00756F95 /* StandardGeoJSONTests.swift */,
 			);
 			path = StellarJayTests;
 			sourceTree = "<group>";
@@ -255,6 +261,7 @@
 			files = (
 				1BE0EFAA21253A6300C063B8 /* MultiPolygon.swift in Sources */,
 				1BE0EFB021253B6100C063B8 /* PositionContaining.swift in Sources */,
+				1B9A08B821254846006D5D3A /* Keyed+UnkeyedCodingContainer.swift in Sources */,
 				1BE0EFA621253A4500C063B8 /* MultiLineString.swift in Sources */,
 				1BE0EFA221253A0200C063B8 /* MultiPoint.swift in Sources */,
 				1BE0EF9C212539E400C063B8 /* GeoJSON.swift in Sources */,
@@ -275,6 +282,7 @@
 				1BE0EFB221253C0800C063B8 /* BearTransitRouteTests.swift in Sources */,
 				1BE0EFB421253C1F00C063B8 /* BearTransitStopTests.swift in Sources */,
 				1BE0EFB621253F2D00C063B8 /* BearTransit.swift in Sources */,
+				1B319DA421254B8D00756F95 /* StandardGeoJSONTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
