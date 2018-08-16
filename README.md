@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/sstadelman/stellarjay/logo/StellarJay.png" width=400/>
+
 # StellarJay
 **StellarJay is a helpful framework for parsing GeoJSON content in Swift.**  
 
