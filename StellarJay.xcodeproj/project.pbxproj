@@ -10,6 +10,7 @@
 		1B319DA421254B8D00756F95 /* StandardGeoJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B319DA321254B8D00756F95 /* StandardGeoJSONTests.swift */; };
 		1B535B62212E79EF00A36E76 /* BetaNYC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B535B61212E79EF00A36E76 /* BetaNYC.swift */; };
 		1B535B64212E7F1A00A36E76 /* StandardGeoJSONTests2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B535B63212E7F1A00A36E76 /* StandardGeoJSONTests2.swift */; };
+		1B535B66212E934B00A36E76 /* nyc_special_purpose_zoning.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1B535B65212E8BA600A36E76 /* nyc_special_purpose_zoning.geojson */; };
 		1B9A08B821254846006D5D3A /* Keyed+UnkeyedCodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A08B721254846006D5D3A /* Keyed+UnkeyedCodingContainer.swift */; };
 		1BE0EF832125391300C063B8 /* StellarJay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE0EF792125391300C063B8 /* StellarJay.framework */; };
 		1BE0EF882125391300C063B8 /* StellarJayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0EF872125391300C063B8 /* StellarJayTests.swift */; };
@@ -273,6 +274,7 @@
 			files = (
 				1BE0EF982125398D00C063B8 /* bear_transit.geojson in Resources */,
 				1BE0EF992125398D00C063B8 /* bear_transit_stops.geojson in Resources */,
+				1B535B66212E934B00A36E76 /* nyc_special_purpose_zoning.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
