@@ -92,7 +92,7 @@ public final class FeatureStandard: GeoJSON {
         self.id = try values.decode(String.self, forKey: .id)
     }
     
-    private(set) var properties: Dictionary<String, Any>
-    private(set) var geometry: Geometry? = nil
-    private(set) var id: String? = nil
+    public private(set) var properties: Dictionary<String, Any>
+    public private(set) var geometry: Geometry? = nil
+    public private(set) var id: String? = nil
 }
