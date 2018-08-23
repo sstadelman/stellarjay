@@ -17,6 +17,7 @@ let bundle = Bundle(for: type(of: self))
 let data = try Data(contentsOf: bundle.url(forResource:"bear_transit", withExtension: "geojson")!, options: [])
 let routeCollection: FeatureCollectionStandard = try JSONDecoder().decode(FeatureCollectionStandard.self, from: data)
 ```
+To test this in action, see **Tests.playground** in the workspace.
 
 ### GeoJSON types + Strongly-typed properties
 That's well and good, but it would be much more powerful if we could access the unique content of the `properties` dictionary from our model in a strongly-typed API, instead of navigating nested dictionaries.  To do this, we create a Swift type which implements `Decodable` protocol, which exposes all the properties which we want to access from the `Feature.properties` dictionary.
