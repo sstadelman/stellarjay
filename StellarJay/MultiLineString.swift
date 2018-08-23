@@ -27,7 +27,6 @@ final public class MultiLineString: Geometry, PositionContaining {
                 return CLLocationCoordinate2D(latitude: $0[1], longitude: $0[0])
             }
         }
-        print(self.coordinates.debugDescription)
         try super.init(from: decoder)
     }
     

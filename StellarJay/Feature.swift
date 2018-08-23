@@ -19,7 +19,6 @@ public final class Feature<PropertiesType: Decodable>: GeoJSON {
         try super.init(from: decoder)
         let geometry = try values.decode(Geometry.self, forKey: .geometry)
         
-        print(geometry.type)
         switch geometry.type {
         case "Point":
             self.geometry = try values.decode(Point.self, forKey: .geometry)
@@ -64,7 +63,6 @@ public final class FeatureStandard: GeoJSON {
         try super.init(from: decoder)
         let geometry = try values.decode(Geometry.self, forKey: .geometry)
         
-        print(geometry.type)
         switch geometry.type {
         case "Point":
             self.geometry = try values.decode(Point.self, forKey: .geometry)
