@@ -6,6 +6,8 @@
 ## What it does
 StellarJay uses Swift `Decodable` protocol and `JSONDecoder` API to parse and marshall [rfc7946 GeoJSON](https://tools.ietf.org/html/rfc7946) objects type-safely, while providing you a Swift generics API to inject custom `Decodeable` types for your service into the graph.  You get a type-safe object graph of your GeoJSON content, including your own unique types.
 
+![](https://raw.githubusercontent.com/sstadelman/stellarjay/logo/Screen%20Shot%202018-08-24%20at%2012.22.43%20AM.png)
+
 ## Example
 Using [bear_transit.geojson](https://raw.githubusercontent.com/sstadelman/stellarjay/master/StellarJayTests/bear_transit.geojson) as an example, we have a `FeatureCollection` with an array of 4 `Feature`'s.  Each `Feature` has a `Geometry` of type `MultiLineString` (a polyline), and a dictionary of `properties`.  All these types are standard GeoJSON.
 
