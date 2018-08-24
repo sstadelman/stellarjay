@@ -64,7 +64,7 @@ let routeCollection = try JSONDecoder().decode(FeatureCollection<Feature<Route>>
 Both of these `decode(...)` operations return a `FeatureCollection`, with 4 `Feature` items.  But, the `FeatureCollectionStandard`'s features have `let properties: Dictionary<String, Any>`, while the generic typed `FeatureCollection<Feature<Route>>`'s features have `let properties: Route`.
 
 ## Use Cases
-**StellarJay** has been used with data from these services:
+StellarJay has been used with data from these services:
 
  - [transit.land](https://transit.land): Super-cool API for accessing transit provider route, stop, and schedule info.  (Stops, Routes)
  - [BetaNYC](http://data.beta.nyc/dataset?res_format=GeoJSON):  Open data platform for NYC (Single-part polygons)
