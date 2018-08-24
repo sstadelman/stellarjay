@@ -11,7 +11,7 @@ StellarJay uses Swift `Decodable` protocol and `JSONDecoder` API to parse and ma
 ## Example
 Using [bear_transit.geojson](https://raw.githubusercontent.com/sstadelman/stellarjay/master/StellarJayTests/bear_transit.geojson) as an example, we have a `FeatureCollection` with an array of 4 `Feature`'s.  Each `Feature` has a `Geometry` of type `MultiLineString` (a polyline), and a dictionary of `properties`.  All these types are standard GeoJSON.
 
-### GeoJSON types only (with `Dictionary` properties)
+### GeoJSON types only
 To parse these as standard GeoJSON, use the `JSONDecoder` API to decode the `FeatureCollection`, specifying that the `Feature` will parse the `properties` dictionary as `Dictionary<String, Any>`.
 
 ```swift
