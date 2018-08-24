@@ -4,20 +4,11 @@ import MapKit
 import StellarJay
 import PlaygroundSupport
 
-class Delegate: NSObject, MKMapViewDelegate {
-    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        let renderer = MKPolygonRenderer(overlay: overlay)
-        renderer.strokeColor = UIColor.orange.withAlphaComponent(0.6)
-        renderer.lineWidth = 0.5
-        renderer.fillColor = UIColor.orange.withAlphaComponent(0.15)
-        return renderer
-    }
-}
-let delegate = Delegate()
+
+var standardCollection: FeatureCollectionStandard!
 
 let url: URL = Bundle.main.url(forResource: "nyc_special_purpose_zoning", withExtension: "geojson")!
 
-var standardCollection: FeatureCollectionStandard!
 
 do {
     let data = try Data(contentsOf: url)
@@ -31,6 +22,7 @@ let nyCoordinates = CLLocationCoordinate2DMake(40.804379624000035, -73.935327719
 
 // Now let's create a MKMapView
 let mapView = MKMapView(frame: CGRect(x:0, y:0, width:800, height:800))
+let delegate = MKMapViewDelegateImpl()
 mapView.delegate = delegate
 
 // Define a region for our map view
