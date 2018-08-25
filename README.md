@@ -17,8 +17,7 @@ To parse these as standard GeoJSON, use the `JSONDecoder` API to decode the `Fea
 ```swift
 let bundle = Bundle(for: type(of: self))
 let data = try Data(contentsOf: bundle.url(forResource:"bear_transit", 
-                                         withExtension: "geojson")!, 
-                                               options: [])
+                                         withExtension: "geojson")!, options: [])
 let routeCollection: FeatureCollectionStandard = try JSONDecoder()
                       .decode(FeatureCollectionStandard.self, from: data)
 ```
