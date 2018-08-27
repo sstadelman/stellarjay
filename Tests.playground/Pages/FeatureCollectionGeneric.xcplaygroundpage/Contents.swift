@@ -32,13 +32,10 @@ catch {
     print(error)
 }
 
-
 let polygons: [MKPolygon] = featureCollection.features.reduce(into: Array<MKPolygon>()) { prev, next in
     guard let polygon = next.geometry as? Polygon else { return }
     prev += polygon.coordinates.map {
-        let p = MKPolygon(coordinates: $0, count: $0.count)
-        p.title = next.properties.name
-        return p
+        return MKPolygon(coordinates: $0, count: $0.count)
     }
 }
 mapView.addOverlays(polygons)

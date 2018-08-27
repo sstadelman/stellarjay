@@ -5,19 +5,6 @@ import StellarJay
 import PlaygroundSupport
 
 
-var standardCollection: FeatureCollectionStandard!
-
-let url: URL = Bundle.main.url(forResource: "nyc_special_purpose_zoning", withExtension: "geojson")!
-
-
-do {
-    let data = try Data(contentsOf: url)
-    standardCollection = try JSONDecoder().decode(FeatureCollectionStandard.self, from: data)
-}
-catch {
-    print(error)
-}
-
 let nyCoordinates = CLLocationCoordinate2DMake(40.804379624000035, -73.935327719999975)
 
 // Now let's create a MKMapView
@@ -35,12 +22,56 @@ mapRegion.span.longitudeDelta = mapRegionSpan
 
 mapView.setRegion(mapRegion, animated: true)
 
-let polygons: [MKPolygon] = standardCollection.features.compactMap {
-    guard let polygon = $0.geometry as? Polygon, let outerPolygonCoords = polygon.coordinates.first else { return nil }
-    return MKPolygon(coordinates: outerPolygonCoords, count: outerPolygonCoords.count)
+let url: URL = Bundle.main.url(forResource: "nyc_special_purpose_zoning", withExtension: "geojson")!
+
+
+
+
+
+
+
+
+
+
+
+
+
+//: Use `Decodable` to parse `*.geojson` into `FeatureCollection`
+var standardCollection: FeatureCollectionStandard!
+
+do {
+    let data = try Data(contentsOf: url)
+    standardCollection = try JSONDecoder().decode(FeatureCollectionStandard.self, from: data)
+}
+catch {
+    print(error)
+}
+
+//: Produce `MKOverlay` from the geojson `Geometries`
+let polygons: [MKPolygon] = standardCollection.features.reduce(into: Array<MKPolygon>()) { prev, next in
+    guard let polygon = next.geometry as? Polygon else { return }
+    prev += polygon.coordinates.map {
+        return MKPolygon(coordinates: $0, count: $0.count)
+    }
 }
 
 mapView.addOverlays(polygons)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Add the created mapView to our Playground Live View
 PlaygroundPage.current.liveView = mapView
