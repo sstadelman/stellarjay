@@ -4,7 +4,7 @@
 **StellarJay is a helpful framework for parsing GeoJSON content in Swift.**  
 
 ## What it does
-StellarJay uses Swift `Decodable` protocol and `JSONDecoder` API to parse and marshal [rfc7946 GeoJSON](https://tools.ietf.org/html/rfc7946) objects type-safely, while providing you a Swift generics API to inject custom `Decodeable` types for your service into the graph.  You get a type-safe object graph of your GeoJSON content, including your own unique types.
+StellarJay parses and marshals [GeoJSON](https://tools.ietf.org/html/rfc7946) objects type-safely, using Swift `Decodable` protocol and `JSONDecoder` API.  It provides you a Swift generic API to inject custom `Decodeable` types for your service into the graph.  You get a type-safe object graph of your GeoJSON content, including your own unique types.
 
 ![](https://raw.githubusercontent.com/sstadelman/stellarjay/logo/Screen%20Shot%202018-08-24%20at%2012.22.43%20AM.png)
 
