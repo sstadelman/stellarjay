@@ -8,6 +8,12 @@ StellarJay uses Swift `Decodable` protocol and `JSONDecoder` API to parse and ma
 
 ![](https://raw.githubusercontent.com/sstadelman/stellarjay/logo/Screen%20Shot%202018-08-24%20at%2012.22.43%20AM.png)
 
+## Installation
+
+### Carthage
+
+    github "sstadelman/stellarjay" >= 1.0.1
+
 ## Example
 Using [bear_transit.geojson](https://raw.githubusercontent.com/sstadelman/stellarjay/master/StellarJayTests/bear_transit.geojson) as an example, we have a `FeatureCollection` with an array of 4 `Feature`'s.  Each `Feature` has a `Geometry` of type `MultiLineString` (a polyline), and a dictionary of `properties`.  All these types are standard GeoJSON.
 
