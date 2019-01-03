@@ -3,5 +3,6 @@
     <pages>
         <page name='FeatureCollectionStandard'/>
         <page name='FeatureCollectionGeneric'/>
+        <page name='FeatureCollectionBart'/>
     </pages>
 </playground>
