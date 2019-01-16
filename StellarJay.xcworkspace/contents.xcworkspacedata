@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/i826181/github/StellarJay/Tests.playground">
+      location = "group:Tests.playground">
    </FileRef>
    <FileRef
       location = "container:StellarJay.xcodeproj">
