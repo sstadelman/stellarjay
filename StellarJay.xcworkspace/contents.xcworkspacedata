@@ -5,6 +5,6 @@
       location = "group:Tests.playground">
    </FileRef>
    <FileRef
-      location = "container:StellarJay.xcodeproj">
+      location = "group:StellarJay.xcodeproj">
    </FileRef>
 </Workspace>

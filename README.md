@@ -10,9 +10,9 @@ StellarJay parses and marshals [GeoJSON](https://tools.ietf.org/html/rfc7946) ob
 
 ## Installation
 
-### Carthage
+### SPM
 
-    github "sstadelman/stellarjay" >= 1.0.1
+    .package(url: "git@github.com:sstadelman/stellarjay.git", from: "1.0.1")
 
 ## Example
 Using [bear_transit.geojson](https://raw.githubusercontent.com/sstadelman/stellarjay/master/StellarJayTests/bear_transit.geojson) as an example, we have a `FeatureCollection` with an array of 4 `Feature`'s.  Each `Feature` has a `Geometry` of type `MultiLineString` (a polyline), and a dictionary of `properties`.  All these types are standard GeoJSON.
@@ -86,7 +86,6 @@ StellarJay has been used with data from these services:
  - [ ] support for bounding box
  - [ ] API improvements
  - [ ] broader support for ["Foreign Members"](https://tools.ietf.org/html/rfc7946#page-15) (beyond `properties`) 
- - [ ] Cocoapods support
  - [ ] per-geometry unit tests
 
 ## License
