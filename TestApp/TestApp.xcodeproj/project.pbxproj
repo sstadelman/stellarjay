@@ -13,10 +13,11 @@
 		1B27813D2407871800627EEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B27813B2407871800627EEF /* Main.storyboard */; };
 		1B27813F2407871A00627EEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B27813E2407871A00627EEF /* Assets.xcassets */; };
 		1B2781422407871A00627EEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B2781402407871A00627EEF /* LaunchScreen.storyboard */; };
-		1B2781522407879B00627EEF /* us_state_outlines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2781512407879B00627EEF /* us_state_outlines.swift */; };
+		1B2781522407879B00627EEF /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2781512407879B00627EEF /* Properties.swift */; };
 		1B278154240787BA00627EEF /* us_state_outlines.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1B278153240787B900627EEF /* us_state_outlines.geojson */; };
 		1B2781562407883200627EEF /* StellarJay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2781552407883200627EEF /* StellarJay.framework */; };
 		1B2781572407883200627EEF /* StellarJay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2781552407883200627EEF /* StellarJay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1BB64C6F2408474D0055EAD5 /* cb_2018_us_csa_500k.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1BB64C6E2408474D0055EAD5 /* cb_2018_us_csa_500k.geojson */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,9 +45,10 @@
 		1B2781432407871A00627EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B27814A2407874200627EEF /* StellarJay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = StellarJay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B27814E2407875A00627EEF /* TestApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestApp.entitlements; sourceTree = "<group>"; };
-		1B2781512407879B00627EEF /* us_state_outlines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = us_state_outlines.swift; sourceTree = "<group>"; };
+		1B2781512407879B00627EEF /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
 		1B278153240787B900627EEF /* us_state_outlines.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = us_state_outlines.geojson; sourceTree = "<group>"; };
 		1B2781552407883200627EEF /* StellarJay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StellarJay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BB64C6E2408474D0055EAD5 /* cb_2018_us_csa_500k.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cb_2018_us_csa_500k.geojson; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +92,8 @@
 				1B2781402407871A00627EEF /* LaunchScreen.storyboard */,
 				1B2781432407871A00627EEF /* Info.plist */,
 				1B278153240787B900627EEF /* us_state_outlines.geojson */,
-				1B2781512407879B00627EEF /* us_state_outlines.swift */,
+				1BB64C6E2408474D0055EAD5 /* cb_2018_us_csa_500k.geojson */,
+				1B2781512407879B00627EEF /* Properties.swift */,
 			);
 			path = TestApp;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B2781422407871A00627EEF /* LaunchScreen.storyboard in Resources */,
+				1BB64C6F2408474D0055EAD5 /* cb_2018_us_csa_500k.geojson in Resources */,
 				1B27813F2407871A00627EEF /* Assets.xcassets in Resources */,
 				1B278154240787BA00627EEF /* us_state_outlines.geojson in Resources */,
 				1B27813D2407871800627EEF /* Main.storyboard in Resources */,
@@ -177,7 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B2781522407879B00627EEF /* us_state_outlines.swift in Sources */,
+				1B2781522407879B00627EEF /* Properties.swift in Sources */,
 				1B27813A2407871800627EEF /* ViewController.swift in Sources */,
 				1B2781362407871800627EEF /* AppDelegate.swift in Sources */,
 				1B2781382407871800627EEF /* SceneDelegate.swift in Sources */,

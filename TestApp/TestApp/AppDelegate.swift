@@ -17,19 +17,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let url: URL = Bundle.main.url(forResource: "us_state_outlines", withExtension: "geojson")!
+        let url: URL = Bundle.main.url(forResource: "cb_2018_us_csa_500k", withExtension: "geojson")!
         
         //: Use `Decodable` to parse `*.geojson` into `FeatureCollection`
-        var featureCollection: FeatureCollection<Feature<us_state_outlines.State>>!
+        var featureCollection: FeatureCollection<Feature<Properties.CSA>>!
 
         do {
             let data = try Data(contentsOf: url)
-            featureCollection = try JSONDecoder().decode(FeatureCollection<Feature<us_state_outlines.State>>.self, from: data)
+            featureCollection = try JSONDecoder().decode(FeatureCollection<Feature<Properties.CSA>>.self, from: data)
             //: Produce `MKOverlay` from the geojson `Geometries`
             let polygons: [MKPolygon] = featureCollection.features.reduce(into: Array<MKPolygon>()) { prev, next in
-                guard let polygon = next.geometry as? StellarJay.Polygon else { return }
-                prev += polygon.coordinates.map {
-                    return MKPolygon(coordinates: $0, count: $0.count)
+                switch next.geometry {
+                case .some(let g) where g is MultiPolygon:
+                    let polygons = (g as! MultiPolygon).coordinates.flatMap({ $0.flatMap({ MKPolygon(coordinates: $0, count: $0.count )})})
+                    prev.append(contentsOf: polygons)
+                case .some(let g) where g is Polygon:
+                    prev += (g as! Polygon).coordinates.map {
+                        return MKPolygon(coordinates: $0, count: $0.count)
+                    }
+                default:
+                    break
                 }
             }
             print(polygons.count)
