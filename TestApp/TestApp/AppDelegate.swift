@@ -31,12 +31,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 case .some(let g) where g is MultiPolygon:
                     let polygons = (g as! MultiPolygon).coordinates.flatMap({ $0.flatMap({ MKPolygon(coordinates: $0, count: $0.count )})})
                     prev.append(contentsOf: polygons)
-                case .some(let g) where g is Polygon:
-                    prev += (g as! Polygon).coordinates.map {
+                case .some(let g) where g is StellarJay.Polygon:
+                    prev += (g as! StellarJay.Polygon).coordinates.map {
                         return MKPolygon(coordinates: $0, count: $0.count)
                     }
                 default:
-                    break
+                    print("Could not convert: \(next.properties)")
                 }
             }
             print(polygons.count)

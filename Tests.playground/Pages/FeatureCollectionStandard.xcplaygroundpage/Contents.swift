@@ -8,7 +8,7 @@ import PlaygroundSupport
 let nyCoordinates = CLLocationCoordinate2DMake(40.804379624000035, -73.935327719999975)
 
 // Now let's create a MKMapView
-let mapView = MKMapView(frame: CGRect(x:0, y:0, width:800, height:800))
+let mapView = MKMapView(frame: CGRect(x:0, y:0, width:640, height:800))
 let delegate = MKMapViewDelegateImpl()
 mapView.delegate = delegate
 
@@ -21,6 +21,14 @@ mapRegion.span.latitudeDelta = mapRegionSpan
 mapRegion.span.longitudeDelta = mapRegionSpan
 
 mapView.setRegion(mapRegion, animated: true)
+
+let camera = MKMapCamera()
+    camera.centerCoordinate = mapView.centerCoordinate
+    camera.pitch = 80.0
+    camera.altitude = 100.0
+    camera.heading = 45.0
+    mapView.setCamera(camera, animated: true)
+
 
 let url: URL = Bundle.main.url(forResource: "nyc_special_purpose_zoning", withExtension: "geojson")!
 
